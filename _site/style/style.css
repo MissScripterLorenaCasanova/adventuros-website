@@ -368,7 +368,7 @@ table .hidden {
 button, .button {
   background-color: rgba(100, 100, 100, 0.1);
   border: 0;
-  color: white;
+  color: white !important;
   margin: 3px;
   padding: 3px; }
 
@@ -440,7 +440,8 @@ article div a:visited {
   padding: 21px 21px 21px;
   border: 3px solid #f8ffd0;
   border-style: dashed;
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
 
 #blog div.subscribe h2 {
   margin: 0px 3px 10px;
@@ -486,7 +487,8 @@ article div a:visited {
   display: inline-block;
   width: auto;
   border-radius: 4px;
-  text-shadow: none; }
+  text-shadow: none;
+  color: white; }
 
 @media only screen and (max-device-width: 768px) {
   .content {

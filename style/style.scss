@@ -417,10 +417,10 @@ table .hidden {
 
 button, .button{
   background-color: rgba(100,100,100,0.1);
-  border:0;
-  color:white;
-  margin:3px;
-  padding:3px;
+  border: 0;
+  color: white !important;
+  margin: 3px;
+  padding: 3px;
 }
 .code{
   font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
@@ -493,6 +493,7 @@ article div a:visited {
   border: 3px solid rgba(248, 255, 208, 1);
   border-style: dashed;
   text-align: center;
+  margin-top: 50px;
 }
 #blog div.subscribe h2{
   margin: 0px 3px 10px;
@@ -546,6 +547,7 @@ article div a:visited {
   width: auto;
   border-radius: 4px;
   text-shadow: none;
+  color: white;
 }
 
 

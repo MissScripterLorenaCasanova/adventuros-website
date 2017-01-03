@@ -33,11 +33,85 @@ mixpanel.init("82dd4c6477ad9717ecfb6bcdd8acebe2");</script><!-- end Mixpanel -->
           <hr>
       </nav>
       <div class="content">
-        
+        <h1>Store</h1>
+<br>
+<style type="text/css">
+	#widget{
+		background-color: #F2F2F2;
+		font: 14px Helvetica;
+		color: #444;
+		text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+		width: 504px;
+		height: 274px;
+		background: url('http://images.evelend.com/images/1405174832.png') no-repeat scroll 0% 0% transparent;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -55px;
+	}
+	#widget h2{
+		font-weight: bold;
+		font-family: arial;
+		padding-top: 7px;
+	}
+	#widget p{
+		margin-left: -16px;
+		text-align: center;
+		font-size: 19px;
+	}
+	#widget input{
+		background: rgba(255,255,255,0);
+		width: auto;
+		margin-top: -20px;
+		margin-left: 68px;
+	}
+	#widget #price{
+		font-size: 36px;
+		font-weight: bold;
+		text-align: center;
+		color: #9EC14E;
+		margin-top: -10px;
+		font-family: arial;
+		margin-left: -15px;
+	}
+</style>
+<article id="widget">
+	<h2>Pre-Purchase AdventurOS</h2>
+		<div style="width:300px;">
+			<p>Pre-Purchase AdventurOS!<br>
+			Cross-platform and DRM-free.
+			</p>
+			<div id="price">$15</div>
+		</div>
+	<br>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="NSD8WXNEEVUG2">
+<input type="image" src="http://images.evelend.com/images/1405171917.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+</article>
+<!--
+<img style="display:block;margin-left:auto;margin-right:auto;margin-top: -30px;" src="/images/store.png" alt="Developers ilustration">
+!-->
+<hr>
+<article>
+	<h2>Late upgrade!</h2>
+	<a href="https://sellfy.com/p/vL28/"><img style="display:block;margin-left:auto;margin-right:auto;" src="http://i.imgur.com/Os8UWR0.png" alt="Wallpapers"></a>
+	<p style="text-align:center;">If you want to get the wallpapers and you only have the $5 perk, you can late-upgrade it by contributing on this link:</p>
+	<div style="display:block;margin-left:auto;margin-right:auto; width:150px; margin-top:10px; margin-bottom:40px;">
+		<a href="https://sellfy.com/p/vL28/" id="vL28" class="sellfy-buy-button">buy</a><script type="text/javascript" src="https://sellfy.com/js/api_buttons.js"></script>
+	</div>
+</article>
+<script>
+var d = document.getElementById("store");
+d.className = d.className + " selected";
+</script>
       </div>
       <footer>
         <hr>
-          <a href="http://www.evelend.com" target="_blank">Evelend Ltd.</a> - Last update: 2017-01-03 00:44:33 +0100
+          <a href="http://www.evelend.com" target="_blank">Evelend Ltd.</a> - Last update: 03 Jan 2017
         <hr>
       </footer>
     </div>
