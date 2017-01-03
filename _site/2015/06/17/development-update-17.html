@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AdventurOS</title>
+    <title>Development Update #17 - AdventurOS</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -80,7 +80,7 @@ Many of you have suggested switching to a new framework, which of course makes s
       </div>
       <!--End mc_embed_signup-->
       <div class="rsscontainer">
-        <a href="http://adventuros.evelend.com/blog/feed">Or add the RSS Feed <img class="rssimage" src="http://www.ucatt.org.uk/files/images/icons/rss-icon.png"></a>
+        <a href="http://adventuros.evelend.com/blog/feed.xml">Or add the RSS Feed <img class="rssimage" src="http://www.ucatt.org.uk/files/images/icons/rss-icon.png"></a>
       </div>
     </div>
 
@@ -110,6 +110,9 @@ Many of you have suggested switching to a new framework, which of course makes s
 <script>
 var d = document.getElementById("blog");
 d.className = d.className + " selected";
+mixpanel.track("Visited blog", {
+  "title": "Development Update #17"
+});
 </script>
       </div>
       <footer>
