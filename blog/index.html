@@ -1,9 +1,10 @@
 ---
 layout: main
 title: Blog
+nav-active: blog
 ---
 
-<div id="blog">
+<section class="blog-main">
   {% for post in paginator.posts %}
     <article>
       <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
@@ -28,9 +29,4 @@ title: Blog
       <span class="next ">Next</span>
     {% endif %}
   </div>
-</div>
-
-<script>
-var d = document.getElementById("blog");
-d.className = d.className + " selected";
-</script>
+</section>

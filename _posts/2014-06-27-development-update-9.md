@@ -9,18 +9,18 @@ title: "Development Update #9"
 <p>If the game encounters an extension that was not contemplated on our design, a random monster will spawn taking that extension's role.</p>
 <p>BUT, what if we do not want a random monster in one of our custom extensions? We have a way cooler option for you guys!</p>
 <p>Allow us to introduce you to the Monster Creator!</p>
-<img src="http://adventuros.evelend.com/images/preview/monstereditor.png" alt="">
+<img src="/images/preview/monstereditor.png" alt="">
 
 <p>With this simple program you will be able to create and edit monsters so they can be bound with any file extension you want.</p>
 <p>For instance, let’s say we have a saved file called "my_game.sav" and we want AdventurOS to generate a fire monkey whenever we find any .sav file.</p>
-<img src="http://adventuros.evelend.com/images/preview/firemonkey.png" alt="">
+<img src="/images/preview/firemonkey.png" alt="">
 
 <p>After creating this monster you will find it in game whenever you come across files with your chosen extension for that monster to appear.</p>
-<img src="http://adventuros.evelend.com/images/preview/ingame.png" alt="">
+<img src="/images/preview/ingame.png" alt="">
 
 <p>An awesome feature of the Monster Creator is the possibility to share your monsters with other Adventurers if you wish to.</p>
 <p>You will also be able to download and use other people's creations with a simple url pasting.</p>
-<img src="http://adventuros.evelend.com/images/preview/import.png" alt="">
+<img src="/images/preview/import.png" alt="">
 
 <p>We have some other teasers to give you today:</p>
 

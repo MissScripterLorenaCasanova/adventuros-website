@@ -14,19 +14,19 @@
   <body>
     <header>
       <a href="/">
-        <img src="/images/title.svg" id="titleimg" alt="AdventurOS">
+        <img src="/images/title.svg" class="titleimg" alt="AdventurOS">
       </a>
     </header>
     <div class="center">
       <nav>
           <hr>
-          <a id="blog" class="glow" href="/blog">Blog</a> &#8226;
-          <a id="game" class="glow" href="/game">Game</a> &#8226;
-          <a id="press" class="glow" href="/press">Press</a> &#8226;
-          <a id="community" class="glow" href="http://reddit.com/r/adventuros">Community</a> &#8226;
-          <a id="greenlight" class="glow" href="http://steamcommunity.com/sharedfiles/filedetails/?id=176185396" target="_blank">Steam</a> &#8226;
-          <a id="store" class="glow" href="/store">Store</a> &#8226;
-          <a id="help" class="glow" href="/help">Contact</a>
+          <a class="{% if page.nav-active == 'blog' %}selected{% endif %}" href="/blog">Blog</a> &#8226;
+          <a class="{% if page.nav-active == 'game' %}selected{% endif %}" href="/game">Game</a> &#8226;
+          <a class="{% if page.nav-active == 'press' %}selected{% endif %}" href="/press">Press</a> &#8226;
+          <a class="{% if page.nav-active == 'store' %}selected{% endif %}" href="/store">Store</a> &#8226;
+          <a href="http://reddit.com/r/adventuros">Reddit</a> &#8226;
+          <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=176185396" target="_blank">Steam</a> &#8226;
+          <a class="{% if page.nav-active == 'help' %}selected{% endif %}" href="/help">Contact</a>
           <hr>
       </nav>
       <div class="content">

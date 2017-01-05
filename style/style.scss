@@ -1,73 +1,11 @@
 ---
 ---
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600);
+@import '../_sass/global';
 
-* {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 14pt;
-}
-
-html {
-  font-weight: 300;
-  background: rgb(21, 12, 18);
-  color: black;
-}
-
-body {
-  color: white;
-  margin: 0;
-  background: url("/images/Torchlight.jpg") left center fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  padding: 18px;
-  padding-bottom: 30px;
-  overflow-x: hidden;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2em;
-  font-weight: normal;
-  }
-
-h2 {
-  text-align: center;
-  font-size: 18pt;
-  font-weight:normal;
-  margin-bottom: -10px;
-}
-
-ul{
-  list-style-type: square;
-}
-
-nav, footer{
-  color:gray;
-  text-align: center;
-  font-size: 14pt;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top:-6px; margin-bottom:-6px;
-  }
-
-nav ul {
-  margin-top: 0; margin-bottom: 0;
-}
-
-nav ul li{
-  display: inline;
-}
-
-button{
-  cursor: pointer;
-}
-
-iframe{
-  max-width: 100%;
-}
+// Views
+@import '../_sass/views/store';
+@import '../_sass/views/blog';
 
 .mobile {
   @media (min-width: 768px){
@@ -79,51 +17,29 @@ iframe{
     display: none;
   }
 }
-img {
-  max-width: 100%;
-  overflow: hidden;
-}
 
 .center {
   margin-bottom: 30px;
 }
 
-.content{
+.content {
   max-width: 602px;
   display: block;
   margin: 0 auto;
 }
 
-.content p img{
+.content p img {
   max-width: 100%;
 }
 
-a.selected:link, a.selected:visited, a.selected:hover, a.selected:active {
-  text-decoration: none;
-  color: #6893BD;
+#about {
+  text-align: left;
+  background-color: rgba(100,100,100,0.1);
+  padding: 10px;
 }
 
-a:link, a:visited, a:hover, a:active {
-  text-decoration:none;
-  color: #58a8ff;
-}
-a.buy:link, a.buy:visited, a.buy:hover, a.buy:active {
-  font-size: 28pt;
-  text-decoration:none; color:rgb(224,209,103);
-  margin-bottom:0px;
-}
-a.greenlight:link, a.greenlight:visited, a.greenlight:hover, a.greenlight:active {
-  text-decoration:none;
-  color:#91dd7a;
-}
-
-#about{
-    text-align: left;
-    background-color: rgba(100,100,100,0.1);
-    padding: 10px;
-}
-
-a.glow, a.glow:hover, a.glow:focus{
+.center nav {
+  a, a:hover, a:focus {
     text-decoration: none;
     color: white;
     text-shadow: none;
@@ -132,34 +48,18 @@ a.glow, a.glow:hover, a.glow:focus{
     -o-transition: 500ms linear 0s;
     transition: 500ms linear 0s;
     outline: 0 none;
-}
-
-a.glow:hover, a.glow:focus{
+  }
+  a:hover, a:focus {
     color: #fff;
     text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+  }
+  a.selected:link, a.selected:visited, a.selected:hover, a.selected:active {
+    text-decoration: none;
+    color: #58a8ff;
+  }
 }
 
-footer {
-  color:gray;
-  text-align: center;
-  a:link, a:visited, a:hover, a:active {
-  color: gray;
-}
-
-input, textarea{
-  width : 300px;
-  margin: 3px;
-  background-color: rgba(100,100,100,0.1);
-  border: 0;
-  color: white;
-  padding: 3px;
-
-  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-     -moz-box-sizing: border-box; /* For all Gecko based browsers */
-          box-sizing: border-box;
-}
-
-.aboutthegame
+.aboutthegame {
   img {
     -webkit-border-radius:15px;
     -moz-border-radius:15px;
@@ -173,40 +73,25 @@ input, textarea{
   }
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(100,100,100,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(100,100,100,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(100,100,100,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(100,100,100,0.75), rgba(0,0,0,0));
-}
-
 .centerimage {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#titleimg {
+.titleimg {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   margin-bottom: 0;
   padding: 10px;
   box-sizing: border-box;
-}
-@media (min-width: 768px){
-  #titleimg {
+  @media (min-width: 768px) {
     padding: 0px;
     margin-bottom: -32px;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
-
-/* COUNTDOWN */
-#countdown {
-  text-align: center;
-  font-size: 1.5em;
 }
 
 #help .content {
@@ -228,201 +113,14 @@ hr {
   }
 }
 
-/* BLOG */
-#blog {
-  h2 {
-    margin: 10px 0 .5em 0;
-    color: white;
-    font-size: 36px;
-    text-align: left;
-  }
-  h3 {
-    font-size: 25px;
-    text-decoration: underline;
-  }
-  img {
-    margin: 10px auto;
-    max-width: 100%;
-  }
-  img.normal {
-    margin: 0;
-    width: auto;
-    border: 0;
-  }
-  .subt {
-    color: #939393;
-    font-size: 17px;
-    font-style: normal;
-  }
-  article {
-    padding-bottom: 40px;
-    margin-bottom: 20px;
-    @media (min-width: 768px) {
-      text-shadow: 0 0 10px black;
-      background-color: rgba(0,0,0,0.5);
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      padding: 5px 15px;
-      box-sizing: border-box;
-    }
-  }
-  article:last-child {
-    border-bottom: 0px;
-  }
-  p {
-    font-size: 20px;
-    font-style: normal;
-    margin: 0.8rem 0px;
-    color: white;
-  }
-}
-
-/* FORUM */
-.clear{
-  clear: both;
-}
-#post{
-  margin-left:60px;
-}
-#post h2{
-  text-align:left;
-  padding-left: 10px;
-}
-#post p{
-  font-size: 15pt;
-}
-
-#postfooter p{
-  color:gray;
-  float: right;
-  font-size: 10pt;
-  white-space:nowrap;
-  margin-right: 30px;
-  margin-top: -15px;
-  margin-bottom: 0px;
-}
-#postfooter form{
-  display: inline;
-}
-
-form textarea{
-	width: 100%;
-	resize:vertical;
-	display: inline-block;
-}
-
-#postfooter .subscribe{
-  color: rgb(100,255,100);
-  font-size: 10pt;
-  white-space: nowrap;
-  float: right;
-  margin-right: -208px;
-  margin-top: 10px;
-  width: 100px;
-}
-
-#postfooter .subscribed{
-  color: rgb(255,255,100);
-  font-size: 10pt;
-  white-space: nowrap;
-  float: right;
-  margin-right: -208px;
-  margin-top: 10px;
-  width: 100px;
-}
-/* INDEX */
-#forum table{
-  font-size: 1em;
-  border-collapse: collapse;
-  width: 100%;
-  }
-#forum table, tr.forum{
-  color: gray;
-  -webkit-transition: 500ms linear 0s;
-    -moz-transition: 500ms linear 0s;
-    -o-transition: 500ms linear 0s;
-    transition: 500ms linear 0s;
-  }
-/* Section color 0:general, 1:gameplay, 2:suggestions, 3:modding, 4:development */
-#f0, .f0{border-left: 10px solid #ccc; line-height: 40px;}
-#f1, .f1{border-left: 10px solid rgb(150,212,25); line-height: 40px;}
-#f2, .f2{border-left: 10px solid rgb(233,210,53); line-height: 40px;}
-#f3, .f3{border-left: 10px solid rgb(50,142,234); line-height: 40px;}
-#f4, .f4{border-left: 10px solid rgb(227,56,45); line-height: 40px;}
-
-.fby{
-  color:gray;
-  float: right;
-  font-size: 10pt;
-  white-space:nowrap;
-  margin-right: 30px;
-  margin-top: -15px;
-  margin-bottom: 0px;
-}
-.replay{
-  display: block;
-  color: white;
-}
-#forum table tr:hover{
-    background: #444444;
-    cursor: pointer;
-    -webkit-transition: 500ms linear 0s;
-    -moz-transition: 500ms linear 0s;
-    -o-transition: 500ms linear 0s;
-    transition: 500ms linear 0s;
-    }
-#forum table .gap:hover{
-  background-color: #1A1A1A;
-}
-#forum table td{
-  background: rgba(255,255,255,0);
-  padding-left:10px;
-  margin-bottom: 10px;
-  }
-#forum #sections{
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.fseen{
-  color:black;
-}
-
-.loadmore {
-  margin: 16px 0;
-  }
-
-.loadmore:hover {
-  cursor: pointer;
-  }
-
-table .hidden {
-  display: none;
-  }
-
-.sections_description {
-  font-size: 10pt;
-  text-align:center;
-  }
-
-.sections_description span:hover {
-  cursor: pointer;
-  }
-
-.sections_description .hidden {
-  border-left: 10px solid black!important;
-  color: gray;
-  }
-
-button, .button{
+button, .button {
   background-color: rgba(100,100,100,0.1);
   border: 0;
   color: white !important;
   margin: 3px;
   padding: 3px;
 }
-.code{
+.code {
   font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
   font-size: 12pt;
   background: black;
@@ -447,136 +145,14 @@ article div a:visited {
   text-shadow: -1px 1px 8px #707070, 1px -1px 8px #707070;
 }
 
-#widget {
-    background-color: #F2F2F2;
-    font: 14px Helvetica;
-    color: #444;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-    width: 504px;
-    height: 274px;
-    background: url('http://images.evelend.com/images/1405174832.png') no-repeat scroll 0% 0% transparent;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -55px;
-  h2 {
-    font-weight: bold;
-    font-family: arial;
-    padding-top: 7px;
-  }
-  p {
-    margin-left: -16px;
-    text-align: center;
-    font-size: 19px;
-    font-family: 'Vegur';
-  }
-  input {
-    background: rgba(255,255,255,0);
-    width: auto;
-    margin-top: -20px;
-    margin-left: 68px;
-  }
-  #price{
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    color: #9EC14E;
-    margin-top: -10px;
-    font-family: arial;
-    margin-left: -15px;
-  }
-}
-
-/**/
-#blog div.subscribe{
-  background: rgba(255,255,255,0.06);
-  padding: 21px 21px 21px;
-  border: 3px solid rgba(248, 255, 208, 1);
-  border-style: dashed;
-  text-align: center;
-  margin-top: 50px;
-}
-#blog div.subscribe h2{
-  margin: 0px 3px 10px;
-  font-size: 24px;
-  text-align: center;
-}
-#blog input[type="email"],
-#blog input[type="submit"]{
-  background-color: rgba(0,0,0,0.2);
-  padding: 8px 10px;
-  max-width: 100%;
-  border-radius: 4px;
-}
-#blog input[type="submit"]{
-  margin: 10px 3px 2px;
-  background-color: #76C756;
-}
-@media (min-width: 768px){
-  #blog div.subscribe h2,
-  #blog div.subscribe{
-    text-align: left;
-  }
-}
-
-/* RSS text */
-@media (min-width: 768px){
-  #blog .rsscontainer{
-    margin-left: 4px;
-  }
-}
-#blog .rsscontainer a{
-  font-size: 12px;
-  color: rgba(255,255,255,0.8);
-}
-#blog .rsscontainer img.rssimage{
-  width: 14px;
-  height: 14px;
-  vertical-align: middle;
-  border: 0;
-  position: relative;
-  top: -3px;
-}
-
-
-#blog article .leave-comment,
-#blog article .back-to-blog{
-  margin: 8px 0;
-  background-color: #C75656;
-  padding: 9px 20px;
-  display: inline-block;
-  width: auto;
-  border-radius: 4px;
-  text-shadow: none;
-  color: white;
-}
-
-
 @media only screen and (max-device-width: 768px) {
-  .content{
+  .content {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    }
-  #titleimg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #blog img{
-    border: 0;
   }
 }
 
-
-#blog article.list h2{
-  font-size: 20px;
-}
-@media (min-width: 768px){
-  #blog article.list h2{
-    display: inline-block;
-    margin-right: 20px;
-  }
-}
 
 .view-all{
   display: block;
@@ -591,10 +167,6 @@ article div a:visited {
 
 .press-url {
   color: rgb(100,100,100);
-}
-
-.pagination {
-  padding: 0 16px 30px;
 }
 
 .main {
