@@ -1,6 +1,7 @@
 sass:
   style: compressed
 paginate: 3
+permalink: pretty
 paginate_path: "/blog/page/:num/"
 weburl: 'http://adventuros.evelend.com'
 gems: [jekyll-paginate]

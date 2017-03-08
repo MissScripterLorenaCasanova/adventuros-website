@@ -10,10 +10,11 @@ layout: main
 
   <div>
     <h2>Latest blog entries:</h2>
+
     <ul>
-      <li><a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a> - {{ site.posts[0].date | date_to_string }}
-      <li><a href="{{ site.posts[1].url }}">{{ site.posts[1].title }}</a> - {{ site.posts[1].date | date_to_string }}
-      <li><a href="{{ site.posts[2].url }}">{{ site.posts[2].title }}</a> - {{ site.posts[2].date | date_to_string }}
+      {% for entry in site.posts limit:3 %}
+        <li><a href="{{ entry.url }}">{{ entry.title }}</a> - {{ entry.date | date_to_string }}
+      {% endfor %}
     </ul>
   </div>
 
@@ -25,4 +26,3 @@ layout: main
 
 
 </div>
-
